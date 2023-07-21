@@ -14,3 +14,13 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+button {
+    border: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 2em;
+    font-family: monospace;
+    font-weight: bold;
+}
