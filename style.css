@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bungee&family=Roboto:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
 h1 {
     text-align: center;
     font-size: 2em;
-    color: blue;
-    text-decoration: underline;
+    color: #fff;
+    margin-top: 3%;
+    font-family: 'Bruno Ace', cursive;
+    letter-spacing: 3px;
 }
-
-p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 12px;
-}
-
 .shopBtn{
     position: relative;
     top: 30%;
@@ -33,8 +34,8 @@ p {
 
 form {
     position: absolute;
-    top: 30%;
-    left: 35%;
+    top: 18%;
+    left: 36%;
     background-color: gray;
     border-radius: 5px;
     padding: 20px 45px;
@@ -64,7 +65,7 @@ label {
     position: relative;
     top: 6px;
     left: 38.8%;
-    background-color: blue;
+    background-color: rgb(184, 183, 183);
     color: #fff;
     border-radius: 7px;
     padding: 10px;
@@ -72,10 +73,21 @@ label {
     font-size: 0.65em;
     font-family: Tahoma;
     font-weight: bold;
+    font-family: 'Bruno Ace', cursive;
 }
 .submitBtn:hover {
     background-color: white;
     color: darkgray;
     box-shadow: 2px 0px 2px 0px darkgrey;
     font-weight: bolder;
+}
+
+.fa-circle-user {
+   position: relative;
+   top: 15px;
+   left: 45%;
+   transform: scale(2.6);
+   padding-top: 5px;
+   padding-bottom: 26.5px;
+   color: white;
 }
