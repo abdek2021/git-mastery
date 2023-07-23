@@ -74,5 +74,8 @@ label {
     font-weight: bold;
 }
 .submitBtn:hover {
-    background-color: bisque;
+    background-color: white;
+    color: darkgray;
+    box-shadow: 2px 0px 2px 0px darkgrey;
+    font-weight: bolder;
 }
