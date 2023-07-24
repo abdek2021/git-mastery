@@ -65,9 +65,9 @@ label {
     position: relative;
     top: 6px;
     left: 38.8%;
-    background-color: rgb(184, 183, 183);
+    background-color: rgba(184, 183, 183, 0.5);
     color: #fff;
-    border-radius: 7px;
+    border-radius: 7.57px;
     padding: 10px;
     border: none;
     font-size: 0.65em;
