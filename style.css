@@ -76,9 +76,9 @@ label {
     font-family: 'Bruno Ace', cursive;
 }
 .submitBtn:hover {
-    background-color: white;
+    background-color: black;
     color: darkgray;
-    box-shadow: 2px 0px 2px 0px darkgrey;
+    box-shadow: 2px 0px 2px 0px #fff;
     font-weight: bolder;
 }
 
