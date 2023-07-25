@@ -13,7 +13,7 @@ h1 {
     text-align: center;
     font-size: 2em;
     color: #fff;
-    margin-top: 3%;
+    margin-top: 50px;
     font-family: 'Bruno Ace', cursive;
     letter-spacing: 3px;
 }
@@ -34,7 +34,7 @@ h1 {
 
 form {
     position: absolute;
-    top: 18%;
+    top: 30px;
     left: 36%;
     background-color: gray;
     border-radius: 5px;
