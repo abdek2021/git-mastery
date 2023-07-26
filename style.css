@@ -15,7 +15,6 @@ h1 {
     color: #fff;
     margin-top: 50px;
     font-family: 'Bruno Ace', cursive;
-    letter-spacing: 3px;
 }
 .shopBtn{
     position: relative;
@@ -34,11 +33,11 @@ h1 {
 
 form {
     position: absolute;
-    top: 30px;
-    left: 36%;
+    top: 120px;
+    left: 33%;
     background-color: gray;
     border-radius: 5px;
-    padding: 20px 45px;
+    padding: 20px 37px;
     font-size: 1.2em;
     box-shadow: 2px 0px 2px 2px rgba(100, 105, 105, 0.4);
 }
@@ -48,7 +47,7 @@ input {
     outline: none;
     padding-top: 6.7px;
     padding-bottom: 6.7px;
-    padding-right: 80px;
+    padding-right: 60px;
     padding-left: 5px;
     border-radius: 3px;
     font-size: 15px;
@@ -90,4 +89,20 @@ label {
    padding-top: 5px;
    padding-bottom: 26.5px;
    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        position: inherit;
+        top: -27px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 1em;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #formContainer {
+        margin: 17.5px;
+    }
 }

@@ -12,26 +12,28 @@
   </head>
   <body>
     <h1>MEMBERSHIP REGISTRATION FORM</h1>
-    <form action="" method="post">
-      <div id="userIcon"><i class="fa-solid fa-circle-user"></i></div>
-      <div class="userDetails">
-        <label for="fName">First Name:</label> <br />
-        <input type="text" id="fName" />
-      </div>
-      <div class="userDetails">
-        <label for="mName">Middle Name:</label> <br />
-        <input type="text" id="mName" />
-      </div>
-      <div class="userDetails">
-        <label for="lName">Last Name:</label> <br />
-        <input type="text" id="lName" />
-      </div>
-      <div class="userDetails">
-        <label for="pWord">Password:</label> <br />
-        <input type="password" id="pWord" />
-      </div>
-      <button type="submit" class="submitBtn">Submit</button>
-    </form>
+    <div id="formContainer">
+      <form action="/user-reg" method="POST">
+        <div id="userIcon"><i class="fa-solid fa-circle-user"></i></div>
+        <div class="userDetails">
+          <label for="fName">First Name:</label> <br />
+          <input type="text" id="fName" />
+        </div>
+        <div class="userDetails">
+          <label for="mName">Middle Name:</label> <br />
+          <input type="text" id="mName" />
+        </div>
+        <div class="userDetails">
+          <label for="lName">Last Name:</label> <br />
+          <input type="text" id="lName" />
+        </div>
+        <div class="userDetails">
+          <label for="pWord">Password:</label> <br />
+          <input type="password" id="pWord" />
+        </div>
+        <button type="submit" class="submitBtn">Submit</button>
+      </form>
+    </div>
 
     <script src="app.js"></script>
   </body>
