@@ -23,178 +23,114 @@ console.log(getCounter);
 console.log(increaseCounter);
 console.log(decreaseCounter);
 
-const price = 15.0; // price of the hammer
-const myMoney = 10.0; // money i have with me
-
-const decision = myMoney >= price ? "buy the hammer" : "don't buy the hammer";
-console.log(decision);
-
-const weather = "snow";
-
-if (weather === "snow") {
-  console.log("Bring a coat");
-} else if (weather === "rain") {
-  console.log("Bring a rain jacket");
-} else {
-  console.log("Wear what you have");
-}
-
-const room = "dining room";
-const suspect = "Mr. Parkes";
-
-let weapon = "";
-let solved = false;
-
-if (room === "dining room" && suspect === "Mr. Parkes") {
-  weapon = "knife";
-  solved = true;
-}
-
-if (solved) {
-  console.log(suspect + " did it in the " + room + " with a " + weapon);
-} else {
-  console.log("The case is not closed!");
-}
-
-const balance = 325.0;
-const checkBalance = true;
-const isActive = false;
-
-if (checkBalance === true) {
-  if (isActive === true && balance > 0) {
-    console.log(`Your balance is ${balance.toFixed(2)}.`);
-  } else if (isActive === true && balance < 0) {
-    console.log(`Your balance is negative.`);
-  } else if (isActive === true && balance === 0) {
-    console.log(`Your account is empty`);
-  } else if (isActive === false) {
-    console.log(`Your account is no longer active`);
+const myFunc = function (max) {
+  let theSound = "";
+  for (let i = 0; i < max; i++) {
+    theSound += "* ";
   }
-} else {
-  console.log(`Thank you. Have a nice day!`);
+  return theSound;
+};
+
+console.log(myFunc(1));
+console.log(myFunc(2));
+console.log(myFunc(3));
+console.log(myFunc(4));
+console.log(myFunc(5));
+
+function movies(movieFunc, name) {
+  movieFunc(name);
 }
 
-const flavors = "chocolate";
-const topping = "peanuts";
-const vessel = "wafer cone";
+movies(function displayedMovies(movieName) {
+  console.log("The name of the movie is " + movieName);
+}, "Fistful Fight of Vengeance");
 
-let customerFeedBack = "";
-
-const orderCondition =
-  (flavors === "chocolate" || flavors === "vanilla") &&
-  (topping === "sprinkles" || topping === "peanut") &&
-  (vessel === "wafer cone" || vessel === "sugar cone")
-    ? (customerFeedBack = "Great choice! Your ice cream is at the next window.")
-    : (customerFeedBack = "Please check our menu and try again.");
-
-console.log(orderCondition);
-
-const eatsPlants = true;
-const eatsAnimals = true;
-let category;
-
-if (eatsPlants) {
-  category = "herbivore";
-} else if (eatsAnimals) {
-  category = "carnivore";
-} else if (eatsPlants && eatsAnimals) {
-  category = "omnivore";
-} else {
-  category = "undefined";
-}
-
-console.log(category);
-
-const myFavoriteNumber = "3";
-
-switch (myFavoriteNumber) {
-  case 0:
-    console.log("You entered 0");
-    break;
-  case 1:
-    console.log("You entered 1");
-    break;
-  case 2:
-    console.log("You entered 2");
-    break;
-  case 3:
-    console.log("You entered 3");
-    break;
-  case 4:
-    console.log("You entered 4");
-    break;
-  case 5:
-    console.log("You entered 5");
-    break;
-  default:
-    console.log("You have no number as your favourite");
-}
-
-const moneyHave = 100.29;
-const bankAccount = true;
-const bankAccountActive = true;
-const amountTransferred = 45;
-let accountBalance;
-
-if (bankAccount) {
-  if (bankAccountActive && moneyHave > 0) {
-    accountBalance = moneyHave - amountTransferred;
-    console.log(`Your balance is ${accountBalance.toFixed()}`);
-  } else if (bankAccountActive && moneyHave < 0) {
-    console.log(`Your balance is negative`);
-  } else if (bankAccountActive && moneyHave === 0) {
-    console.log(`Your account is empty`);
+const laugh = function (laughTimes) {
+  let sound = "";
+  for (let i = 0; i < laughTimes; i++) {
+    sound += "ha";
   }
-} else {
-  console.log(
-    `You have no account with us. Kindly visit any nearest bank branch for proper registration!`
-  );
+  sound += "!";
+  return sound;
+};
+
+console.log(laugh(1));
+console.log(laugh(5));
+console.log(laugh(10));
+
+const awfulSound = function () {
+  return "boohoo!";
+};
+
+console.log(awfulSound());
+
+function myName(fullName, firstName) {
+  fullName(firstName);
 }
 
-const tier = "nsfw deck";
-let output = "You’ll receive ";
+myName(function tellName(theName) {
+  console.log("My name is " + theName);
+}, "Abiodun");
 
-switch (tier) {
-  case "deck of legends":
-    output += "a custom card, ";
-  case "collector's deck":
-    output += "a signed version of the Exploding Kittens deck, ";
-  case "nsfw deck":
-    output +=
-      "one copy of the NSFW (Not Safe for Work) Exploding Kittens card game and ";
-  default:
-    output += "one copy of the Exploding Kittens card game.";
+const donuts = [
+  [1, 2, 3, 4, 5],
+  ["sandine", "crayfish", "salad"],
+  [true, false],
+];
+console.log(donuts);
+
+const crew = ["Mal", "Zoe", "Wash", "Inara", "Jayne", "Kaylee"];
+crew.splice(2, 2, "Chididogo", "Amelia");
+crew.push("Simon", "River", "Book");
+console.log(crew);
+
+const prices = [1.23, 48.11, 90.11, 8.5, 9.99, 1.0, 1.1, 67.0];
+prices.unshift(11);
+for (let i = 0; i < prices.length; i++) {
+  if (i === 0) {
+    prices[i] *= 2;
+  } else if (i === 3) {
+    prices[i] *= 2;
+  } else if (i === 7) {
+    prices[i] *= 2;
+  } else {
+    prices[i];
+  }
+}
+console.log(prices);
+
+const rainbow = ["Red", "Orange", "Blackberry", "Blue"];
+rainbow.forEach(function (rainbows, index) {
+  rainbows = rainbows.toUpperCase();
+  console.log(index + " - " + rainbows);
+});
+
+function hasEnoughPlayer(arrayPlayers) {
+  if (arrayPlayers.length >= 7) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-console.log(output);
+const result = hasEnoughPlayer([
+  "Mal",
+  "Zoe",
+  "Wash",
+  "Inara",
+  "Jayne",
+  "Kaylee",
+]);
+console.log(result);
 
-const education = "high school diploma";
-let salary;
+const turnMeIntoAString = ["U", "d", "a", "c", "i", "t", "y"];
+console.log(turnMeIntoAString.join(""));
 
-switch (education) {
-  case "high school diploma":
-    salary = 5000;
-    break;
-  case "master's degree":
-    salary = 15000;
-    break;
-  case "doctorate degree":
-    salary = 20000;
-    break;
-  case "professorship":
-    salary = 25000;
-    break;
-  default:
-    salary = "You've no educational qualification";
-}
+const miniTest = [12, 29, 11, 3];
 
-console.log(
-  `In 2023, a person with ${education} earned ${salary.toLocaleString()}/year`
-);
-
-let start = 1;
-
-while (start < 10) {
-  start = start + 2;
-  console.log(start);
-}
+miniTest.forEach(function (tests, index) {
+  if (tests % 2 === 0) {
+    tests = tests * 2;
+    console.log(tests);
+  }
+});

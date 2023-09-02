@@ -1,21 +1,42 @@
-#increment, #decrement, #reset{
-    padding: 7px;
-    background-color: red;
-    color: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(100, 200, 205, 0.12);
+}
+#btn-wrapper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#counter {
+    margin-left: 120px;
+    padding: 20px;
+    font-size: 2.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#increment, #decrement, #reset {
+    background-color: blue;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
     font-size: 1em;
+    margin: 3.5px;
     font-weight: bold;
 }
 #decrement {
-    background-color: blue;
+    background-color: red;
 }
 #reset {
     background-color: gray;
-}
-
-#counter {
-    width: 25%;
-    text-align: center;
-    font-size: 2em;
 }
