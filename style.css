@@ -1,108 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Bungee&family=Roboto:wght@700&display=swap');
+#increment, #decrement, #reset{
+    padding: 7px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+#decrement {
+    background-color: blue;
+}
+#reset {
+    background-color: gray;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    background-color: #8EC5FC;
-    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-}
-h1 {
+#counter {
+    width: 25%;
     text-align: center;
     font-size: 2em;
-    color: #fff;
-    margin-top: 50px;
-    font-family: 'Bruno Ace', cursive;
-}
-.shopBtn{
-    position: relative;
-    top: 30%;
-    left: 50%;
-    border: none;
-    background-color: blue;
-    color: #fff;
-    border-radius: 7px;
-    padding: 10px;
-    font-size: 1.5em;
-    font-family: monospace;
-    font-weight: bold;
-    box-shadow: 2px 2px 0px 0px red;
-}
-
-form {
-    position: absolute;
-    top: 120px;
-    left: 33%;
-    background-color: gray;
-    border-radius: 5px;
-    padding: 20px 37px;
-    font-size: 1.2em;
-    box-shadow: 2px 0px 2px 2px rgba(100, 105, 105, 0.4);
-}
-input {
-    border: none;
-    background-color: #fff;
-    outline: none;
-    padding-top: 6.7px;
-    padding-bottom: 6.7px;
-    padding-right: 60px;
-    padding-left: 5px;
-    border-radius: 3px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 7.5px;
-}
-.userDetails {
-    margin-bottom: 12px;
-}
-label {
-    color: #fff;
-}
-.submitBtn {
-    position: relative;
-    top: 6px;
-    left: 38.8%;
-    background-color: rgba(184, 183, 183, 0.5);
-    color: #fff;
-    border-radius: 7.57px;
-    padding: 10px;
-    border: none;
-    font-size: 0.65em;
-    font-family: Tahoma;
-    font-weight: bold;
-    font-family: 'Bruno Ace', cursive;
-}
-.submitBtn:hover {
-    background-color: black;
-    color: darkgray;
-    box-shadow: 2px 0px 2px 0px #fff;
-    font-weight: bolder;
-}
-
-.fa-circle-user {
-   position: relative;
-   top: 15px;
-   left: 45%;
-   transform: scale(2.6);
-   padding-top: 5px;
-   padding-bottom: 26.5px;
-   color: white;
-}
-
-@media screen and (max-width: 600px) {
-    form {
-        position: inherit;
-        top: -27px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 1em;
-        font-weight: 900;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    #formContainer {
-        margin: 17.5px;
-    }
 }
